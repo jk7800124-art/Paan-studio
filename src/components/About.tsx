@@ -1,6 +1,7 @@
 import { Star, ShieldCheck, Sparkles, Gem } from 'lucide-react';
 import { motion } from 'motion/react';
 import { CONTACT_DETAILS } from '../data';
+import packagingImg from '../assets/images/paan_packaging_1781870558810.jpg';
 
 export default function About() {
   const values = [
@@ -43,7 +44,7 @@ export default function About() {
               className="relative rounded-sm overflow-hidden border border-gold-500/20 shadow-2xl bg-luxury-charcoal"
             >
               <img
-                src="/src/assets/images/paan_packaging_1781870558810.jpg"
+                src={packagingImg}
                 alt="Paan Studio Luxury Selection Presentation"
                 className="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

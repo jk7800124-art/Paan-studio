@@ -1,5 +1,12 @@
 import { MenuItem, Review, GalleryImage } from './types';
 
+import goldPaanImg from './assets/images/gold_paan_1781870495880.jpg';
+import silverPaanImg from './assets/images/silver_paan_1781870507185.jpg';
+import sundaySpecialImg from './assets/images/paan_special_1781870520779.jpg';
+import confectioneryImg from './assets/images/confectionery_gold_1781870570921.jpg';
+import packagingImg from './assets/images/paan_packaging_1781870558810.jpg';
+import heroImg from './assets/images/paan_hero_1781870480962.jpg';
+
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'gold-paan',
@@ -7,7 +14,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 399,
     description: 'An ultra-luxurious absolute masterpiece wrapped in 100% authentic edible 24k gold leaf, stuffed with organic gulkand, selected dry fruits, saffron, and premium royal spices.',
     category: 'Premium',
-    image: '/src/assets/images/gold_paan_1781870495880.jpg',
+    image: goldPaanImg,
     isPopular: true,
     isExclusive: true
   },
@@ -17,7 +24,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 199,
     description: 'An imperial, exquisite blend of premium spices, dates, and sweet gulkand encased in a crisp betel leaf and meticulously coated with premium edible silver foil.',
     category: 'Premium',
-    image: '/src/assets/images/silver_paan_1781870507185.jpg',
+    image: silverPaanImg,
     isPopular: true,
     isExclusive: true
   },
@@ -27,7 +34,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 99,
     description: 'Our highly anticipated weekly exclusive, containing secret proprietary spices, luxury fruit compotes, and custom floral essences.',
     category: 'Premium',
-    image: '/src/assets/images/paan_special_1781870520779.jpg',
+    image: sundaySpecialImg,
     isPopular: true
   },
   {
@@ -36,7 +43,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 70,
     description: 'Our beloved signature creation featuring handpicked tender betel leaf, roasted cashew bits, organic rose petals, and our secret refreshing herbal syrup.',
     category: 'Specialty',
-    image: '/src/assets/images/confectionery_gold_1781870570921.jpg',
+    image: confectioneryImg,
     isPopular: true
   },
   {
@@ -122,37 +129,37 @@ export const MENU_ITEMS: MenuItem[] = [
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     id: 'gal-1',
-    src: '/src/assets/images/gold_paan_1781870495880.jpg',
+    src: goldPaanImg,
     title: 'The 24K Gold Paan',
     description: 'Experience true luxury with edible gold foil wrapped around exquisite traditional ingredients.'
   },
   {
     id: 'gal-2',
-    src: '/src/assets/images/silver_paan_1781870507185.jpg',
+    src: silverPaanImg,
     title: 'The Elegant Silver Paan',
     description: 'An elegant presentation of premium silver vark, curated for the modern connoisseur.'
   },
   {
     id: 'gal-3',
-    src: '/src/assets/images/paan_special_1781870520779.jpg',
+    src: sundaySpecialImg,
     title: 'Paan Studio Signature Special',
     description: 'Our proprietary recipes blending visual perfection with premium elements.'
   },
   {
     id: 'gal-4',
-    src: '/src/assets/images/paan_packaging_1781870558810.jpg',
+    src: packagingImg,
     title: 'Luxury Gift Box Packaging',
     description: 'Elegantly packaged confectionery and sweet boxes, perfect for celebrations, weddings, and gifts.'
   },
   {
     id: 'gal-5',
-    src: '/src/assets/images/confectionery_gold_1781870570921.jpg',
+    src: confectioneryImg,
     title: 'Royal Mukhwas Confectionery',
     description: 'Exquisite post-meal breath fresheners and sweet seeds curated from high-end spices.'
   },
   {
     id: 'gal-6',
-    src: '/src/assets/images/paan_hero_1781870480962.jpg',
+    src: heroImg,
     title: 'Imperial Celebration Platters',
     description: 'Grand catering setups tailored for luxury weddings, corporate banquets, and grand festivals.'
   }

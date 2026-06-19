@@ -24,3 +24,4 @@ export interface GalleryImage {
   title: string;
   description: string;
 }
+

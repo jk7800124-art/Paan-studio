@@ -1,6 +1,7 @@
 import { Phone, MessageCircle, ArrowDown } from 'lucide-react';
 import { motion } from 'motion/react';
 import { CONTACT_DETAILS } from '../data';
+import heroImg from '../assets/images/paan_hero_1781870480962.jpg';
 
 export default function Hero() {
   const handleScrollToMenu = () => {
@@ -20,7 +21,7 @@ export default function Hero() {
       {/* Background Graphic Image with Premium Dark Overlay Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/paan_hero_1781870480962.jpg"
+          src={heroImg}
           alt="Luxury Paan Studio Display Banner"
           className="w-full h-full object-cover object-center scale-105"
           referrerPolicy="no-referrer"
