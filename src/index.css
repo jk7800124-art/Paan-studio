@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fbf8eb;
+  --color-gold-100: #f5edcc;
+  --color-gold-200: #ead898;
+  --color-gold-300: #dbbf5e;
+  --color-gold-400: #cfa835;
+  --color-gold-500: #d4af37; /* Base Gold */
+  --color-gold-600: #aa7c11;
+  --color-gold-700: #885f0c;
+  --color-gold-800: #6b4a0c;
+  --color-gold-900: #583c0f;
+  --color-gold-950: #331f05;
+
+  --color-luxury-black: #0c0c0c;
+  --color-luxury-charcoal: #181818;
+  --color-luxury-gray: #242424;
+  --color-luxury-cream: #fbfaf5;
+  --color-luxury-creamy: #f2eee3;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer utilities {
+  /* Elegant Gold text gradient with metallic feel */
+  .text-gold-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-300 via-gold-500 to-gold-700;
+  }
+  
+  .text-gold-shimmer {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-200 via-gold-400 to-gold-100;
+    background-size: 200% auto;
+    animation: goldShimmer 4s linear infinite;
+  }
+
+  /* Glassmorphic card styling with gold border */
+  .glass-card-gold {
+    background: rgba(15, 15, 15, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+  }
+
+  .glass-card-gold-hover {
+    @apply transition-all duration-500 ease-out;
+  }
+  
+  .glass-card-gold-hover:hover {
+    background: rgba(20, 20, 20, 0.85);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+  }
+
+  /* Shimmer button animation */
+  .btn-gold-shimmer {
+    background: linear-gradient(135deg, #aa7c11 0%, #d4af37 50%, #aa7c11 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+  }
+
+  .btn-gold-shimmer:hover {
+    background-position: right center;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom scrollbar to match the royal theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aa7c11;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Add custom animations is smooth scroll */
+html {
+  scroll-behavior: smooth;
+  background-color: #0c0c0c;
+}
+
+body {
+  color: #fbfaf5;
+  overflow-x: hidden;
+}
